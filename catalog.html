@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/34a765a801.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="wrap header-wrap">
+            <div class="header-logo">
+                <a href="./index.html"><img src="./image/logo-main.png" class="logo-main" alt="main-logo"></a>
+                <a href="#"><img src="./image/logo-search.svg" class="logo-search" alt="search-logo"></a>
+            </div>
+            <div class="header-account">
+                <a href="#"><img src="./image/logo-burger.svg" class="logo-burger" alt="burger-logo"></a>
+                <a href="./registration.html"><img src="./image/logo-ident.svg" class="logo-ident" alt="ident-logo"></a>
+                <a href="./cart.html"><img src="./image/logo-shop.svg" class="logo-shop" alt="shop-logo"></a>
+                <p class="shop-number clearfix">5</p>
+            </div>
+        </div>
+        <section class="overlay">
+            <div class="menu">
+                <h2 class="name-menu"><a href="#">MENU</a></h2>
+                <p class="cat-menu"><a href="#">MAN</a></p>
+                <ul>
+                    <li class="li-menu"><a href="#">Accessories</a></li>
+                    <li class="li-menu"><a href="#">Bags</a></li>
+                    <li class="li-menu"><a href="#">Denim</a></li>
+                    <li class="li-menu"><a href="#">T-Shirts</a></li>
+                </ul>
+                <p class="cat-menu"><a href="#">WOMAN</a></p>
+                <ul>
+                    <li class="li-menu"><a href="#">Accessories</a></li>
+                    <li class="li-menu"><a href="#">Jackets and Coats</a></li>
+                    <li class="li-menu"><a href="#">Polos</a></li>
+                    <li class="li-menu"><a href="#">T-Shirts</a></li>
+                    <li class="li-menu"><a href="#">Shirts</a></li>
+                </ul>
+                <p class="cat-menu"><a href="#">KIDS</a></p>
+                <ul>
+                    <li class="li-menu"><a href="#">Accessories</a></li>
+                    <li class="li-menu"><a href="#">Jackets and Coats</a></li>
+                    <li class="li-menu"><a href="#">Polos</a></li>
+                    <li class="li-menu"><a href="#">T-Shirts</a></li>
+                    <li class="li-menu"><a href="#">Shirts</a></li>
+                    <li class="li-menu"><a href="#">Bags</a></li>
+                </ul>
+            </div>
+            <button class="menu-close-btn">X</button>
+        </section>
+    </header>
+    <nav class="navigation">
+        <div class="wrap navigation-wrap">
+            <p class="navigation-arrivals">NEW ARRIVALS</p>
+            <div class="navigation-items">
+                <a href="./index.html">
+                    <p class="nav-text">HOME /</p>
+                </a>
+                <a href="#">
+                    <p class="nav-text">MEN /</p>
+                </a>
+                <a href="#">
+                    <p class="nav-text">NEW ARRIVALS</p>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <main class="products wrap">
+        <header class="products-filter">
+            <details class="products-filter-sort-details">
+                <summary class="products-filter-sort-summary">
+                    <h3>FILTER</h3>
+                    <svg class="products-filter-sort-logo" width="15" height="10" viewBox="0 0 15 10" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z" /> </svg>
+                </summary>
+                <details>
+                    <summary class="cat-filter">CATEGORY</summary>
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="Accessories">
+                            <label for="Accessories">Accessories</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="Bags">
+                            <label for="Bags">Bags</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="Denim">
+                            <label for="Denim">Denim</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="Hoodies">
+                            <label for="Hoodies">Hoodies and Sweatshirts</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="Jackets">
+                            <label for="Jackets">Jackets and Coats</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="Polos">
+                            <label for="Polos">Polos</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="Shirts">
+                            <label for="Shirts">Shirts</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="Shoes">
+                            <label for="Shoes">Shoes</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="Sweaters">
+                            <label for="Sweaters">Sweaters and Knits</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="T-Shirts">
+                            <label for="T-Shirts">T-Shirts</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="Tanks">
+                            <label for="Tanks">Tanks</label>
+                        </li>
+                    </ul>
+                </details>
+                <details>
+                    <summary class="cat-filter">BRAND</summary>
+                </details>
+                <details>
+                    <summary class="cat-filter">DESIGNER</summary>
+                </details>
+            </details>
+            <div class="products-filter-size">
+                <p class="products-filter-category">TRENDING NOW<img src="./image/down.svg" alt="down"></p>
+                <p class="products-filter-category size-checkbox">SIZE <img src="./image/down.svg" alt="down"> </p>
+                <p class="products-filter-category">PRICE<img src="./image/down.svg" alt="down"></p>
+            </div>
+            <div class="products-filter-category-size">
+                <ul>
+                    <li>
+                        <input type="checkbox" id="xs">
+                        <label for="xs">XS</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="s">
+                        <label for="s">S</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="m">
+                        <label for="m">M</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="l">
+                        <label for="l">L</label>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <article class="products products-items">
+            <section class="products-items-item"> <img src="./image/arr1.png" alt="arr1">
+                <a href="./product.html">
+                    <p class="products-items-item-name">ELLERY X M'O CAPSULE</p>
+                </a>
+                <p class="products-items-item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                <p class="products-items-item-price">$52.00</p>
+            </section>
+            <section class="products-items-item"> <img src="./image/arr2.png" alt="arr2">
+                <a href="./product.html">
+                    <p class="products-items-item-name">ELLERY X M'O CAPSULE</p>
+                </a>
+                <p class="products-items-item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                <p class="products-items-item-price">$52.00</p>
+            </section>
+            <section class="products-items-item products-items-item-mobile"> <img src="./image/arr3.png" alt="arr3">
+                <a href="./product.html">
+                    <p class="products-items-item-name">ELLERY X M'O CAPSULE</p>
+                </a>
+                <p class="products-items-item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                <p class="products-items-item-price">$52.00</p>
+            </section>
+            <section class="products-items-item"> <img src="./image/arr4.png" alt="arr4">
+                <a href="./product.html">
+                    <p class="products-items-item-name">ELLERY X M'O CAPSULE</p>
+                </a>
+                <p class="products-items-item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                <p class="products-items-item-price">$52.00</p>
+            </section>
+            <section class="products-items-item"> <img src="./image/arr5.png" alt="arr5">
+                <a href="./product.html">
+                    <p class="products-items-item-name">ELLERY X M'O CAPSULE</p>
+                </a>
+                <p class="products-items-item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                <p class="products-items-item-price">$52.00</p>
+            </section>
+            <section class="products-items-item"> <img src="./image/arr6.png" alt="arr6">
+                <a href="./product.html">
+                    <p class="products-items-item-name">ELLERY X M'O CAPSULE</p>
+                </a>
+                <p class="products-items-item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                <p class="products-items-item-price">$52.00</p>
+            </section>
+            <section class="products-items-item"> <img src="./image/arr7.png" alt="arr7">
+                <a href="./product.html">
+                    <p class="products-items-item-name">ELLERY X M'O CAPSULE</p>
+                </a>
+                <p class="products-items-item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                <p class="products-items-item-price">$52.00</p>
+            </section>
+            <section class="products-items-item"> <img src="./image/arr8.png" alt="arr8">
+                <a href="./product.html">
+                    <p class="products-items-item-name">ELLERY X M'O CAPSULE</p>
+                </a>
+                <p class="products-items-item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                <p class="products-items-item-price">$52.00</p>
+            </section>
+            <section class="products-items-item"> <img src="./image/arr9.png" alt="arr9">
+                <a href="./product.html">
+                    <p class="products-items-item-name">ELLERY X M'O CAPSULE</p>
+                </a>
+                <p class="products-items-item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                <p class="products-items-item-price">$52.00</p>
+            </section>
+        </article>
+        <footer class="nav-page">
+            <a href="#" class="link-page"><img src="./image/left-way.svg" alt="left"></a> <a href="#" class="link-page">1</a> <a href="#" class="link-page">2</a> <a href="#" class="link-page">3</a> <a href="#" class="link-page">4</a> <a href="#" class="link-page">5</a> <a href="#" class="link-page">6</a> <a href="#" class="link-page">20</a>
+            <a href="#" class="link-page"><img src="./image/right-way.svg" alt="right"></a>
+        </footer>
+    </main>
+    <aside class="advantages">
+        <div class="wrap advantages-wrap">
+            <section class="advantages-item"> <img src="./image/delivery.png" class="advant-1" alt="delivery">
+                <p class="advantages-item-title">Free Delivery</p>
+                <p class="advantages-item-text">Worldwide delivery on all. Authorit tively morph
+                    <br> next-generation innov tion with extensive models.</p>
+            </section>
+            <section class="advantages-item"> <img src="./image/percent.png" class="advant-2" alt="percent">
+                <p class="advantages-item-title">Sales and discounts</p>
+                <p class="advantages-item-text">Worldwide delivery on all. Authorit tively morph
+                    <br> next-generation innov tion with extensive models.</p>
+            </section>
+            <section class="advantages-item"> <img src="./image/king.png" class="advant-3" alt="king">
+                <p class="advantages-item-title">Quality assurance</p>
+                <p class="advantages-item-text">Worldwide delivery on all. Authorit tively morph
+                    <br> next-generation innov tion with extensive models.</p>
+            </section>
+        </div>
+    </aside>
+    <aside class="feedback">
+        <div class="wrap feedback-wrap">
+            <section class="feedback-comment"> <img src="./image/avatar.png" class="feedback-comment-avatar" alt="avatar">
+                <h6 class="feedback-comment-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</h6> </section>
+            <section class="feedback-subscribe">
+                <h6 class="feedback-subscribe-title">SUBSCRIBE
+                    <br> <span class="feedback-subscribe-text">FOR OUR NEWLETTER &amp; PROMOTION</span></h6>
+                <form class="feedback-subscribe-form" action="№" method="get">
+                    <input type="email" class="enter-email" placeholder="Enter Your Email">
+                    <input type="button" class="btn-subscribe" value="Subscribe"> </form>
+            </section>
+        </div>
+    </aside>
+    <footer class="footer">
+        <div class="wrap footer-wrap">
+            <p class="footer-text">© 2021 Brand All Rights Reserved.</p>
+            <div class="footer-social"> <a href="#"><i class="fab fa-facebook-f"></i></a> <a href="#"><i class="fab fa-instagram"></i></a> <a href="#"><i class="fab fa-pinterest-p"></i></a> <a href="#"><i class="fab fa-twitter"></i></a> </div>
+        </div>
+    </footer>
+    <script>
+        document.querySelector(".logo-burger").onclick = function () {
+            document.querySelector(".overlay").classList.add("overlay-open");
+        }
+        document.querySelector(".menu-close-btn").onclick = function () {
+            document.querySelector(".overlay").classList.remove("overlay-open");
+        }
+        document.querySelector(".size-checkbox").onclick = function () {
+            document.querySelector(".products-filter-category-size").classList.add("overlay-size-open");
+        }
+    </script>
+</body>
+
+</html>

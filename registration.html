@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/34a765a801.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="wrap header-wrap">
+            <div class="header-logo">
+                <a href="./index.html"><img src="./image/logo-main.png" class="logo-main" alt="main-logo"></a>
+                <a href="#"><img src="./image/logo-search.svg" class="logo-search" alt="search-logo"></a>
+            </div>
+            <div class="header-account">
+                <a href="#"><img src="./image/logo-burger.svg" class="logo-burger" alt="burger-logo"></a>
+                <a href="./registration.html"><img src="./image/logo-ident.svg" class="logo-ident" alt="ident-logo"></a>
+                <a href="./cart.html"><img src="./image/logo-shop.svg" class="logo-shop" alt="shop-logo"></a>
+                <p class="shop-number clearfix">5</p>
+            </div>
+        </div>
+        <section class="overlay">
+            <div class="menu">
+                <h2 class="name-menu"><a href="#">MENU</a></h2>
+                <p class="cat-menu"><a href="#">MAN</a></p>
+                <ul>
+                    <li class="li-menu"><a href="#">Accessories</a></li>
+                    <li class="li-menu"><a href="#">Bags</a></li>
+                    <li class="li-menu"><a href="#">Denim</a></li>
+                    <li class="li-menu"><a href="#">T-Shirts</a></li>
+                </ul>
+                <p class="cat-menu"><a href="#">WOMAN</a></p>
+                <ul>
+                    <li class="li-menu"><a href="#">Accessories</a></li>
+                    <li class="li-menu"><a href="#">Jackets and Coats</a></li>
+                    <li class="li-menu"><a href="#">Polos</a></li>
+                    <li class="li-menu"><a href="#">T-Shirts</a></li>
+                    <li class="li-menu"><a href="#">Shirts</a></li>
+                </ul>
+                <p class="cat-menu"><a href="#">KIDS</a></p>
+                <ul>
+                    <li class="li-menu"><a href="#">Accessories</a></li>
+                    <li class="li-menu"><a href="#">Jackets and Coats</a></li>
+                    <li class="li-menu"><a href="#">Polos</a></li>
+                    <li class="li-menu"><a href="#">T-Shirts</a></li>
+                    <li class="li-menu"><a href="#">Shirts</a></li>
+                    <li class="li-menu"><a href="#">Bags</a></li>
+                </ul>
+            </div>
+            <button class="menu-close-btn">X</button>
+        </section>
+    </header>
+    <nav class="navigation">
+        <div class="wrap navigation-wrap navigation-mobile">
+            <p class="navigation-arrivals">REGISTRATION</p>
+        </div>
+    </nav>
+    <main class="registration wrap">
+        <form action="#" class="registration-form">
+            <fieldset>
+                <legend>Your Name</legend>
+                <input type="text" placeholder="First Name" class="input-reg">
+                <input type="text" placeholder="Last Name" class="input-reg"> </fieldset>
+            <fieldset class="reg-radio">
+                <input type="radio" id="gender-m">
+                <label for="gender-m">Male</label>
+                <input type="radio" id="gender-f">
+                <label for="gender-f">Female</label>
+                <input type="radio" id="gender-o">
+                <label for="gender-o">Other</label>
+            </fieldset>
+            <fieldset>
+                <legend>Login details</legend>
+                <input type="email" placeholder="Email" class="input-reg">
+                <input type="password" placeholder="Password" class="input-reg">
+                <p class="text-reg">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
+                <input type="submit" value="JOIN NOW" class="btn-join"> </fieldset>
+        </form>
+        <aside class="loyality">
+            <h2>LOYALTY HAS ITS PERKS</h2>
+            <p>Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
+            <ul>
+                <li>15% off welcome offer </li>
+                <li>Free shipping, returns and exchanges on all orders </li>
+                <li>$10 off a purchase on your birthday </li>
+                <li>Early access to products</li>
+                <li>Exclusive offers and rewards</li>
+            </ul>
+        </aside>
+    </main>
+    <aside class="feedback">
+        <div class="wrap feedback-wrap">
+            <section class="feedback-comment"> <img src="./image/avatar.png" class="feedback-comment-avatar" alt="avatar">
+                <h6 class="feedback-comment-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</h6> </section>
+            <section class="feedback-subscribe">
+                <h6 class="feedback-subscribe-title">SUBSCRIBE
+                    <br> <span class="feedback-subscribe-text">FOR OUR NEWLETTER &amp; PROMOTION</span></h6>
+                <form class="feedback-subscribe-form" action="№" method="get">
+                    <input type="email" class="enter-email" placeholder="Enter Your Email">
+                    <input type="button" class="btn-subscribe" value="Subscribe"> </form>
+            </section>
+        </div>
+    </aside>
+    <footer class="footer">
+        <div class="wrap footer-wrap">
+            <p class="footer-text">© 2021 Brand All Rights Reserved.</p>
+            <div class="footer-social"> <a href="#"><i class="fab fa-facebook-f"></i></a> <a href="#"><i class="fab fa-instagram"></i></a> <a href="#"><i class="fab fa-pinterest-p"></i></a> <a href="#"><i class="fab fa-twitter"></i></a> </div>
+        </div>
+    </footer>
+    <script>
+        document.querySelector(".logo-burger").onclick = function () {
+            document.querySelector(".overlay").classList.add("overlay-open");
+        }
+        document.querySelector(".menu-close-btn").onclick = function () {
+            document.querySelector(".overlay").classList.remove("overlay-open");
+        }
+    </script>
+</body>
+
+</html>
